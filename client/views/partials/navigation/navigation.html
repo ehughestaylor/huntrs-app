@@ -1,0 +1,48 @@
+<template name="navigation">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{pathFor 'products'}}"><img src="/images/logo-white.png" alt=""></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+
+                {{#if currentUser}}
+                <!-- <li class="explore-btn"><a href="http://huntrs.meteor.com">Explore</a></li> -->
+                <li class="explore-btn"><a href="{{pathFor 'products'}}">Explore</a></li>
+                <li><a href="{{pathFor 'userProfile'}}">Sell</a></li>
+                {{/if}}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <!-- if you are not logged in or signed up -->
+              {{#unless currentUser}}
+                {{> loginButtons}}
+
+              {{/unless}}
+              <!-- if you are logged in -->
+              {{#if currentUser}}
+
+                <li><a href="{{ pathFor 'userProfile' }}">My account</a></li>
+
+                <li><a href="{{ pathFor 'cart'}}">{{cartCount}}</a></li>
+                <li><a id="logout" href="{{ pathFor 'landing'}}">Logout</a></li>
+              {{/if}}
+
+            </ul>
+            <form class="navbar-form" role="search">
+              <div class="input-group user-search">
+                  <input class="form-control typeahead" name="username" type="text"
+                     placeholder="Search for users..."
+                     autocomplete="off" spellcheck="off"
+                     data-source="usernames"/>
+              </div>
+            </form>
+        </div>
+    </div>
+</template>

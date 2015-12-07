@@ -1,0 +1,19 @@
+@import 'base/_variables.scss';
+
+#userPro{
+  margin-top:2rem;
+  .profile-img{
+    border-radius: 100%;
+  }
+  .username{
+    display: inline;
+    padding: 10px;
+  }
+  .add-product{
+    font-size: 1.4em;
+    text-align: center;
+  }
+  .profile-content{
+    text-align: center;
+  }
+}

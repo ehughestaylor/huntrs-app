@@ -1,0 +1,53 @@
+<template name="productPage">
+  <!-- <h1>{{name}}</h1>
+  <h1>{{price}}</h1>
+  {{>CartAddItemButton}}
+  <br>
+  {{> comments}} -->
+
+  <div class="product container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="content">
+          <h1>{{name}}</h1>
+          <img src="/images/product.jpg" alt="">
+          <p>{{description}}</p>
+          <p>{{price}}</p>
+          <p>
+            submitted by {{author}}
+            {{#if ownPost}} <a href="{{ pathFor 'editProduct' }}">Edit Product</a> {{/if}}
+          </p>
+          <!-- {{>CartAddItemButton}} -->
+        </div>
+      </div>
+      <div class="col-md-4">
+
+        <!-- Show comments -->
+
+        <ul class="comments">
+          {{#each comments}}
+            <li>{{> comment}}</li>
+          {{/each}}
+        </ul>
+
+        <!-- Submit Comments -->
+
+        {{#if currentUser}}
+          {{> commentSubmit}}
+        {{else}}
+          <p>Please Log in to leave a comment</p>
+        {{/if}}
+
+
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+</template>

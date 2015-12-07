@@ -1,0 +1,13 @@
+
+<template name="mainLayout">
+  {{> navigation}}
+    <div id="main">
+      {{> yield}}
+    </div>
+  {{> footer}}
+</template>
+
+<template name="withoutNavbarLayout">
+  {{> yield}}
+
+</template>

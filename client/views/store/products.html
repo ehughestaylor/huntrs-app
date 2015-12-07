@@ -1,0 +1,37 @@
+<template name="products">
+  <!-- {{> CartSummary}} -->
+
+  <div id="products" class="wrapper">
+    <div class="jumbotron">
+        <div class="container content">
+          <div class="container">
+            <h1>Huntrs is a community of style conscious men and women. Buy, sell and connect</h1>
+          </div>
+        </div>
+    </div>
+
+
+
+    <div class="products-wrapper">
+      <div class="container">
+        <div class="row products-row">
+            {{#each products}}
+            <div class="col-md-3 product">
+              <img src="/images/product.jpg" alt="" class="stock img-responsive">
+              <div class="description">
+                <a class="avatar product-desc"> </a>
+                <p class="Title product-desc"><a href="{{pathFor 'productPage'}}">{{name}}</a></p>
+                <p class="product-desc">{{price}}</p>
+                <p class="author product-desc">{{author}}</p>
+              </div>
+            </div>
+            {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</template>

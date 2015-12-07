@@ -1,0 +1,29 @@
+<template name="addProduct">
+  <form class="main" role="form" id="new-product">
+    <div class="form-group">
+      <div class="control-group">
+        <label for="title" class="control-label"></label>
+        <div class="controls">
+          <input name="name" type="text" value="" id="productName" placeholder="Title of New Product">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="price" class="control-label"></label>
+        <div class="controls">
+          <input name="price" min="0.01" step="0.01" max="2500" id='productPrice'  placeholder="Price of New Product">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="description" class="control-label"></label>
+        <div class="controls">
+          <textarea name="description" type="text" id="productDescription"></textarea>
+        </div>
+      </div>
+      <div class="control-group">
+          <div class="controls">
+              <input type="submit" value="Submit"  class="btn btn-large" id="product-button">
+          </div>
+      </div>
+    </div>
+  </form>
+</template>

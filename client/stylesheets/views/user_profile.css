@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+#userPro {
+  margin-top: 2rem; }
+  #userPro .profile-img {
+    border-radius: 100%; }
+  #userPro .username {
+    display: inline;
+    padding: 10px; }
+  #userPro .add-product {
+    font-size: 1.4em;
+    text-align: center; }
+  #userPro .profile-content {
+    text-align: center; }
+
+/*# sourceMappingURL=user_profile.css.map */

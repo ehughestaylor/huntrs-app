@@ -1,0 +1,68 @@
+<template name="landing">
+  <!-- {{#if currentUser}}
+    {{>navigation}}
+
+    {{> profile}}
+
+    {{>footer}}
+  {{/if}}
+  {{#unless currentUser}} -->
+    <div id="landingPage">
+      {{> navigation}}
+      <div class="wrapper">
+        <div class="container">
+          <div class="register">
+            <div class="row">
+
+              <div class="col-md-4 vcenter">
+                <img class="logo img-responsive" src="/images/landing-logo.png" alt="Hunters by ONEHUNTED">
+                <br>
+                <p class="intro">Hunters is a one of a kind shopping community for stylish men.  Sign up to
+                experience the next level of coming out of the closet <br><br>Pause.</p>
+
+                <form role="form form-inline">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" placeholder="User Name" class="form-control" id="username">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" placeholder="Email" class="form-control" id="email">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control" id="password">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" class="form-control" id="password-again">
+                      </div>
+                    </div>
+                    <div class="col-md-6"><button class="btn btn-large" id="register-button" type="submit">Sign Up</button></div>
+                    <div class="col-md-6"><button id="facebook-login" class="btn btn-default btn-Facebook">Sign Up with Facebook</button></div>
+                  </div>
+
+
+
+
+
+
+
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- {{/unless}} -->
+
+
+
+</template>
