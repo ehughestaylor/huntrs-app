@@ -2,9 +2,19 @@ Template.addProduct.events({
   'submit form': function(e) {
       e.preventDefault();
       var product = {
+
+        type: $(e.target).find('[name=type]').val(),
+        category: $(e.target).find('[name=category]').val(),
+        size: $(e.target).find('[name=size]').val(),
+        color: $(e.target).find('[name=color]').val(),
+        condition: $(e.target).find('[name=condition]').val(),
+        type: $(e.target).find('[name=type]').val(),
+        size2: $(e.target).find('[name=size2]').val(),
+        description: $(e.target).find('[name=description]').val(),
         name: $(e.target).find('[name=name]').val(),
         price: $(e.target).find('[name=price]').val(),
-        description: $(e.target).find('[name=description]').val()
+        image: $('.uploaded-image').prop('src')
+
       }
 
       Meteor.call('product', product, function(error, id){

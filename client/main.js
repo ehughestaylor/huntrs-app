@@ -15,11 +15,9 @@ if (Meteor.isClient){
     passwordSignupFields: "USERNAME_AND_EMAIL"
   });
 
- Tracker.autorun(function () {
-     Meteor.subscribe("userData");
- });
-
-
+ // Tracker.autorun(function () {
+ //     Meteor.subscribe("userData");
+ // });
  Tracker.autorun(function(){
   if(Meteor.user()){
     // login handler
@@ -28,5 +26,5 @@ if (Meteor.isClient){
   else{
     // logout handler
   }
-});
+  });
 }

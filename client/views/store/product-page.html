@@ -5,49 +5,75 @@
   <br>
   {{> comments}} -->
 
-  <div class="product container">
+  <div class="product-page container">
     <div class="row">
-      <div class="col-md-8">
-        <div class="content">
-          <h1>{{name}}</h1>
-          <img src="/images/product.jpg" alt="">
-          <p>{{description}}</p>
-          <p>{{price}}</p>
-          <p>
-            submitted by {{author}}
-            {{#if ownPost}} <a href="{{ pathFor 'editProduct' }}">Edit Product</a> {{/if}}
-          </p>
-          {{>CartAddItemButton}}
+      <div class="col-xs-12">
+        <div class="col-xs-6">
+          {{> prod}}
+          <img src="{{image}}" alt="">
         </div>
-      </div>
-      <div class="col-md-4">
+        <div class="col-xs-6">
+          <div class="content">
+            <i>
+              {{#if ownPost}} <a href="{{ pathFor 'editProduct' }}">Edit Product</a> {{/if}}
+            </i>
+            <h1 class="title">{{name}}</h1>
+            <ul>
+              <li class="price">{{price}}</li>
+              <!-- <li class="add-to">{{>CartAddItemButton}}</li> -->
+            </ul>
+          </div>
 
-        <!-- Show comments -->
+          <!-- Description -->
+          <div class="description">
+            <h5>Info</h5>
+            <p>{{description}}</p>
+            <p><b class="tag">Condition</b>: {{condition}}</p>
+            <p><b class="tag">Notes</b>:</p>
 
-        <ul class="comments">
-          {{#each comments}}
-            <li>{{> comment}}</li>
-          {{/each}}
-        </ul>
+          </div>
+
+          <!-- Details -->
+          <div class="details">
+            <p><b class="">Type</b>: {{type}}</p>
+            <p><b class="">Category</b>:{{category}}</p>
+            <p><b class="">Size</b>: {{size}}</p>
+            <p><b class="">Color</b>: {{color}}</p>
+            <p>submitted by {{author}}</p>
+          </div>
+
+
+        </div>
+        <div class="col-xs-6">
+          <ul class="comments">
+            {{#each comments}}
+              <li>{{> comment}}</li>
+            {{/each}}
+            {{#if currentUser}}
+              {{> commentSubmit}}
+            {{else}}
+              <p>Please Log in to leave a comment</p>
+            {{/if}}
+          </ul>
+        </div>
+
 
         <!-- Submit Comments -->
 
-        {{#if currentUser}}
-          {{> commentSubmit}}
-        {{else}}
-          <p>Please Log in to leave a comment</p>
-        {{/if}}
-
 
       </div>
+
     </div>
-
-
-
-
-
   </div>
+</template>
 
 
 
+<template name="prod">
+  <li>
+    {{id}}
+    {{#if avatar}}
+      <img class="uploaded-image" src="{{imageUrl}}"/>
+    {{/if}}
+  </li>
 </template>

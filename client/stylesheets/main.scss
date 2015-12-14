@@ -3,6 +3,7 @@
 @import 'layout/nav.scss';
 @import 'views/landing.scss';
 
+
 h1,h2{
   font-family: 'HelveticaNeue-Bold', sans-serif;
 }
@@ -17,6 +18,45 @@ p,h3,h4{
 html, body {
     height: 100%;
 }
-.container{
+
+#main{
   min-height: 100%;
+}
+.btn, button{
+  background-color: $green;
+  color: white;
+  font-family: $helvet;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+button{
+  border:none;
+  padding: 3px 10px;
+}
+.btn-danger{
+  background-color: $red;
+}
+#facebook-login{
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+#login-dropdown-list {
+    position: relative;
+    background: black;
+    border-radius: 0;
+    border: none;
+    font-family: $helvet;
+}
+accounts-dialog label {
+    display: inline;
+    color: white;
+}
+#login-buttons {
+    display: inline-block;
+    margin-right: 0.2px;
+    line-height: 1;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }

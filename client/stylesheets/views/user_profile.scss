@@ -1,19 +1,122 @@
 @import 'base/_variables.scss';
 
 #userPro{
+  input[type="file"] {
+    display: block;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 33px;
+}
   margin-top:2rem;
-  .profile-img{
+  height: 100%;
+  margin-right: 0;
+
+  #profile{
+    height: 100%;
+    .bio, .style{
+      margin-top:1rem;
+      font-family: $garamond;
+      font-size: 0.9em;
+    }
+    .style{
+      margin-top: 0;
+      border-bottom: 1px solid darkgrey;
+      padding-bottom: 0.5em;
+    }
+    .btn{
+      height: 200px;
+      line-height: 200px;
+      background-color: darkgrey;
+      margin-top: 1rem;
+      .add-product{
+        color:white;
+        transition: 0.3s;
+        height: 200px;
+      }
+      .add-product:hover{
+        text-decoration: none;
+        // color: black;
+        transition: 0.3s;
+      }
+    }
+    .btn:hover{
+      background-color: grey;
+    }
+
+    .send-email{
+      margin: 1rem 0;
+      a{
+        // text-transform: uppercase;
+        font-family: $garamond;
+        i{
+          font-size: 1.4em;
+          padding-right: 1em;
+        }
+        color: black;
+        transition: .3s
+      }
+      a:hover{
+        text-decoration: none;
+        color: darkgrey;
+        transition: .3s
+      }
+      border-bottom: 1px solid darkgrey;
+      padding-bottom: 0.5em;
+    }
+
+
+  }
+
+  .profile-img, .uploaded-image{
     border-radius: 100%;
+    max-height: 120px;
+    padding: 1em;
   }
-  .username{
-    display: inline;
-    padding: 10px;
+
+  #closet{
+    background-color: $grey;
+    margin-top: 2em;
+    min-height: 70vh;
+    padding: 2em;
+
+
   }
-  .add-product{
-    font-size: 1.4em;
-    text-align: center;
+}
+
+.username{
+  font-family: Garamond;
+  font-size: 1.5em;
+}
+
+.closet-name{
+  font-family: 'HelveticaNeue-Bold', sans-serif;
+  text-transform: lowercase;
+}
+.product-desc{
+  font-family: 'HelveticaNeue-Bold';
+  font-weight: bold;
+  margin-bottom:0;
+}
+.product{
+  a{
+    font-family: $garamond;
+    color: black;
+    transition: .3s;
   }
-  .profile-content{
-    text-align: center;
+  a:hover{
+    .stock{
+      opacity: 0.8;
+    }
+    text-decoration: none;
+    color: darkgrey;
+    transition: .3s;
   }
+}
+
+input.delete-image {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
 }

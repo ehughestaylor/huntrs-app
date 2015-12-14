@@ -8,9 +8,3 @@ Meteor.publish('products', function(){
 Meteor.publish('comments', function(){
   return Comments.find({}, {sort: {submitted: -1}});
 });
-Meteor.publish('cart-items', function(){
-  return Cart.Items.find({});
-});
-Meteor.publish('cart-orders', function(){
-  return Cart-userOrders.find({});
-});

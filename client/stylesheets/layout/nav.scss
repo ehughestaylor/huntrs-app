@@ -12,16 +12,24 @@
           max-width: 970px;
       }
   }
+  input[type="text"], textarea {
+
+    background-color : $darkgrey!important;
+    border: none!important;
+    color: $grey;
+
+  }
 }
+
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #FFF;
     background-color: transparent;
 }
 
-html{
-  background: black;
-}
+// html{
+//   background: black;
+// }
 
 /* Custom page footer */
 .footer {
@@ -120,4 +128,10 @@ html{
   img{
     height: 100%;
   }
+}
+
+
+
+.social{
+  padding-left: 4em;
 }

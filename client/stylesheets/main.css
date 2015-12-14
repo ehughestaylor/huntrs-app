@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond);
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
 .navbar, .navbar-default {
   margin-bottom: 0;
   border: none;
@@ -9,13 +10,14 @@
   @media (min-width: 1200px) {
     .navbar .container, .navbar-default .container {
       max-width: 970px; } }
+  .navbar input[type="text"], .navbar textarea, .navbar-default input[type="text"], .navbar-default textarea {
+    background-color: #5D5D5D !important;
+    border: none !important;
+    color: #EFF0F1; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #FFF;
   background-color: transparent; }
-
-html {
-  background: black; }
 
 /* Custom page footer */
 .footer {
@@ -91,9 +93,22 @@ html {
 .navbar-brand img {
   height: 100%; }
 
+.social {
+  padding-left: 4em; }
+
 #landingPage {
   height: 100%;
   min-height: 100%; }
+  #landingPage ::-webkit-input-placeholder {
+    font-family: "EB Garamond", serif; }
+  #landingPage :-moz-placeholder {
+    /* Firefox 18- */
+    font-family: "EB Garamond", serif; }
+  #landingPage ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: "EB Garamond", serif; }
+  #landingPage :-ms-input-placeholder {
+    font-family: "EB Garamond", serif; }
   #landingPage p {
     color: white; }
   #landingPage p.intro {
@@ -102,6 +117,7 @@ html {
     text-align: left;
     padding-bottom: 1em; }
   #landingPage .navbar, #landingPage .navbar-default {
+    z-index: 99999;
     margin-bottom: 0;
     border: none;
     border-radius: 0;
@@ -179,6 +195,16 @@ html {
   vertical-align: middle;
   float: none; }
 
+@media (max-width: 600px) {
+  #landingPage .register {
+    margin-top: 5rem; }
+
+  #register-button {
+    margin-bottom: 0.5em; }
+
+  .navbar-default .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.8); } }
 h1, h2 {
   font-family: 'HelveticaNeue-Bold', sans-serif; }
 
@@ -192,7 +218,45 @@ p, h3, h4 {
 html, body {
   height: 100%; }
 
-.container {
+#main {
   min-height: 100%; }
+
+.btn, button {
+  background-color: #25C331;
+  color: white;
+  font-family: "HelveticaNeue-Bold";
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: lighter; }
+
+button {
+  border: none;
+  padding: 3px 10px; }
+
+.btn-danger {
+  background-color: #C1332C; }
+
+#facebook-login {
+  background-color: #3b5998;
+  border-color: #3b5998; }
+
+#login-dropdown-list {
+  position: relative;
+  background: black;
+  border-radius: 0;
+  border: none;
+  font-family: "HelveticaNeue-Bold"; }
+
+accounts-dialog label {
+  display: inline;
+  color: white; }
+
+#login-buttons {
+  display: inline-block;
+  margin-right: 0.2px;
+  line-height: 1;
+  position: absolute;
+  right: 20px;
+  top: 20px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,9 +8,10 @@
   {{/if}}
   {{#unless currentUser}} -->
     <div id="landingPage">
-      {{> navigation}}
       <div class="wrapper">
         <div class="container">
+          {{> loginButtons}}
+
           <div class="register">
             <div class="row">
 
@@ -43,7 +44,7 @@
                       </div>
                     </div>
                     <div class="col-md-6"><button class="btn btn-large" id="register-button" type="submit">Sign Up</button></div>
-                    <div class="col-md-6"><button id="facebook-login" class="btn btn-default btn-Facebook">Sign Up with Facebook</button></div>
+                    <div class="col-md-6"><button id="facebook-login" class="btn btn-default btn-Facebook">Login <i class="fa fa-facebook-official"></i></button></div>
                   </div>
 
 
@@ -54,6 +55,8 @@
 
 
                 </form>
+                <br>
+                <img src="/images/dont-shop.png" alt="">
               </div>
             </div>
           </div>

@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+.product-page {
+  margin-top: 2em; }
+  .product-page .tag {
+    font-family: "HelveticaNeue-Bold"; }
+  .product-page .details {
+    border-top: 1px solid darkgrey;
+    margin: 1rem 0; }
+  .product-page .product-page-img {
+    width: 100%; }
+  .product-page button {
+    background-color: #C1332C;
+    font-family: "EB Garamond", serif;
+    padding: 1em 2em;
+    color: white; }
+  .product-page .btn {
+    background-color: #25C331; }
+  .product-page .title {
+    font-family: "EB Garamond", serif; }
+  .product-page .price {
+    font-family: "HelveticaNeue-Bold"; }
+  .product-page li {
+    text-decoration: none; }
+  .product-page .date {
+    display: none; }
+  .product-page .comment-form {
+    margin: 0 auto;
+    background: #EFF0F1;
+    padding: 1em; }
+    .product-page .comment-form .controls label {
+      display: block; }
+    .product-page .comment-form .controls textarea {
+      display: block;
+      margin: 1em 0;
+      min-width: 400px;
+      border: none;
+      font-family: "EB Garamond", serif;
+      min-height: 100px; }
+  .product-page .comments {
+    list-style-type: none;
+    margin-top: 2rem;
+    border-top: 1px solid darkgrey;
+    padding: 0; }
+    .product-page .comments li {
+      margin-left: 1rem;
+      list-style-type: none; }
+    .product-page .comments p {
+      border-bottom: 1px solid darkgrey;
+      padding-bottom: 1em; }
+  .product-page .content {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid darkgrey; }
+    .product-page .content ul {
+      padding: 0; }
+    .product-page .content li {
+      display: inline-block; }
+    .product-page .content .price {
+      font-size: 1.7em; }
+    .product-page .content .add-to {
+      padding-left: 50%; }
+
+#editProduct textarea {
+  min-height: 200px;
+  min-width: 400px; }
+
+/*# sourceMappingURL=product-page.css.map */
