@@ -1,9 +1,0 @@
-{
-  "accessKeyId": "AKIAIJ2O3DX2JLHQYLKQ",
-  "secretAccessKey":"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",
-  "bucketName":"huntrs-test",
-  "bucketUrl": "http://huntrs-test.s3.amazonaws.com",
-  "public": {
-    "somePublicKey": "987654321"
-  }
-}
