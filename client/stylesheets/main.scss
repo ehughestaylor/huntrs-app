@@ -41,13 +41,7 @@ button{
   background-color: #3b5998;
   border-color: #3b5998;
 }
-#login-dropdown-list {
-    position: relative;
-    background: black;
-    border-radius: 0;
-    border: none;
-    font-family: $helvet;
-}
+
 accounts-dialog label {
     display: inline;
     color: white;
@@ -59,4 +53,23 @@ accounts-dialog label {
     position: absolute;
     right: 20px;
     top: 20px;
+}
+#users-online{
+  position: absolute;
+  right: 10%;
+  ul{
+    list-style-type: none;
+    text-align: right;
+    li{
+      text-align: right;
+    }
+  }
+  .uploaded-image{
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+  }
 }

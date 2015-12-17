@@ -104,14 +104,20 @@
   textarea{
     width: 100%;
   }
-  .upload-photo{
-    height: 100px;
-    width: 300px;
-    text-align: center;
-    line-height: 100px;
-    border:1px solid black;
+  .upload-box{
+    input{
+      display: none;
+    }
+    button.upload-photo {
+    /* height: 100%; */
+    width: 100%;
+    padding: 1.5rem;
+    background: transparent;
     color: darkgrey;
+    border: 1px solid black;
+    }  
   }
+
   .cancel{
     color: $red;
   }

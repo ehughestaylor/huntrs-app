@@ -96,6 +96,49 @@
 .social {
   padding-left: 4em; }
 
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0px; }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent; }
+
+.navbar-default .navbar-toggle:hover {
+  background: white; }
+
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: black; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white; }
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 1px;
+  border-radius: 0px; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #5D5D5D;
+  font-family: "HelveticaNeue-Bold";
+  font-size: 1.1em; }
+
+#login-buttons a, .accounts-dialog a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  text-decoration: none;
+  font-family: garamond;
+  font-size: 18px; }
+
 #landingPage {
   height: 100%;
   min-height: 100%; }
@@ -205,6 +248,63 @@
   .navbar-default .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.8);
     border-color: rgba(0, 0, 0, 0.8); } }
+#login-buttons #signup-link {
+  float: right;
+  display: none; }
+
+#login-buttons #forgot-password-link {
+  float: none; }
+
+#login-buttons input:-webkit-autofill, #login-buttons textarea:-webkit-autofill, #login-buttons select:-webkit-autofill {
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 0px 1000px white inset; }
+
+#login-buttons input[type=text], .accounts-dialog input[type=text], #login-buttons input[type=email], .accounts-dialog input[type=email], #login-buttons input[type=password], .accounts-dialog input[type=password] {
+  padding: 4px;
+  border: 1px solid #FFF;
+  border-radius: 0px;
+  line-height: 1;
+  font-family: "EB Garamond", serif; }
+
+#login-username-or-email-label, #login-password-label {
+  color: #EFF0F1;
+  font-family: "EB Garamond", serif; }
+
+#login-buttons a, .accounts-dialog a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  text-decoration: none;
+  font-family: garamond;
+  font-size: 12px; }
+
+#login-buttons .login-button, .accounts-dialog .login-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  padding: 4px 8px;
+  font-size: 80%;
+  font-family: garam;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  background: #5D5D5D;
+  border: 1px solid #464f75;
+  border-radius: 0px;
+  font-size: 1em; }
+
+#login-dropdown-list {
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 0;
+  border: none;
+  font-family: "HelveticaNeue-Bold";
+  padding: 1rem 1rem;
+  margin-top: -2rem; }
+
 h1, h2 {
   font-family: 'HelveticaNeue-Bold', sans-serif; }
 
@@ -240,13 +340,6 @@ button {
   background-color: #3b5998;
   border-color: #3b5998; }
 
-#login-dropdown-list {
-  position: relative;
-  background: black;
-  border-radius: 0;
-  border: none;
-  font-family: "HelveticaNeue-Bold"; }
-
 accounts-dialog label {
   display: inline;
   color: white; }
@@ -258,5 +351,21 @@ accounts-dialog label {
   position: absolute;
   right: 20px;
   top: 20px; }
+
+#users-online {
+  position: absolute;
+  right: 10%; }
+  #users-online ul {
+    list-style-type: none;
+    text-align: right; }
+    #users-online ul li {
+      text-align: right; }
+  #users-online .uploaded-image {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 30px; }
 
 /*# sourceMappingURL=main.css.map */
