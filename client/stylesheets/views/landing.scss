@@ -138,3 +138,61 @@
   border-color: rgba(0,0,0,0.8);
   }
 }
+
+#login-buttons #signup-link {
+    float: right;
+    display: none;
+}
+#login-buttons #forgot-password-link {
+    float: none;
+}
+
+#login-buttons{
+  input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { background-color: #FFF; -webkit-box-shadow: 0 0 0px 1000px white inset; }
+}
+#login-buttons input[type=text], .accounts-dialog input[type=text], #login-buttons input[type=email], .accounts-dialog input[type=email], #login-buttons input[type=password], .accounts-dialog input[type=password] {
+    padding: 4px;
+    border: 1px solid #FFF;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: $garamond;
+}
+#login-username-or-email-label, #login-password-label{
+  color:$grey;
+  font-family: $garamond;
+}
+#login-buttons a, .accounts-dialog a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+    text-decoration: none;
+    font-family: garamond;
+    font-size: 12px;
+}
+#login-buttons .login-button, .accounts-dialog .login-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  padding: 4px 8px;
+  font-size: 80%;
+  font-family: garam;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  background: #5D5D5D;
+  border: 1px solid #464f75;
+  border-radius: 0px;
+  font-size: 1em;
+}
+#login-dropdown-list {
+    position: relative;
+    background: rgba(0,0,0,0.9);
+    border-radius: 0;
+    border: none;
+    font-family: $helvet;
+    padding: 1rem 1rem;
+    margin-top: -2rem;
+}
